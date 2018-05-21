@@ -3,16 +3,17 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { ProductsComponent } from './products.component';
-import { ProductComponent } from './product/product.component';
-import { ProductsService } from './products.service';
+import { ProductsService } from './products/products.service';
+import { ProductsComponent } from './products/products.component';
+import { FavoriteComponent } from './Favorite/favorite.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
-    ProductComponent
+    FavoriteComponent
 
   ],
   imports: [
