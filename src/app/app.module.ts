@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { ProductsService } from './products/products.service';
 import { ProductsComponent } from './products/products.component';
 import { FavoriteComponent } from './Favorite/favorite.component';
+import { FormsModule } from '@angular/forms';
+import { TitleCasePipe } from './title-case.pipe';
 
 
 
@@ -13,11 +15,13 @@ import { FavoriteComponent } from './Favorite/favorite.component';
   declarations: [
     AppComponent,
     ProductsComponent,
-    FavoriteComponent
+    FavoriteComponent,
+    TitleCasePipe
 
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     ProductsService
