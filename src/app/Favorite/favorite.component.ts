@@ -12,18 +12,19 @@ export class FavoriteComponent implements OnInit {
   @Output('favourite-change') change = new EventEmitter();
   title:string;
 
-  constructor() { }
 
-  ngOnInit() {
-  }
   onClick(){
 
     this.isFavorite=!this.isFavorite;
     this.change.emit(this.isFavorite);
   }
+  constructor() { }
 
+  ngOnInit() {
+  }
 }
 export interface FavoriteChangeEventArgs{
     
   newValue:boolean;
 }
+

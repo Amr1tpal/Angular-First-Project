@@ -8,6 +8,7 @@ import { ProductsComponent } from './products/products.component';
 import { FavoriteComponent } from './Favorite/favorite.component';
 import { FormsModule } from '@angular/forms';
 import { TitleCasePipe } from './title-case.pipe';
+import { PanelComponent } from './panel/panel.component';
 
 
 
@@ -16,7 +17,8 @@ import { TitleCasePipe } from './title-case.pipe';
     AppComponent,
     ProductsComponent,
     FavoriteComponent,
-    TitleCasePipe
+    TitleCasePipe,
+    PanelComponent
 
   ],
   imports: [
